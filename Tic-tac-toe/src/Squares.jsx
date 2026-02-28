@@ -1,15 +1,9 @@
-import React from 'react '
-const Squares = (props) => {
-    return (
-        <div  style={{border: "1px solid black",
-         width: "100px",
-          height: "100px",
-           display:"flex",
-            justifyContent:"center", 
-            alignItems:"center"}}
-            className='square'> 
-          <h1> {props.value}</h1>
-        </div>
-         );  
+const Squares = ({ value, onClick }) => {
+  return (
+    <div className="square" onClick={onClick}>
+      {value}
+    </div>
+  );
 };
-export default Squares
+
+export default Squares;
